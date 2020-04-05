@@ -1,12 +1,14 @@
-lst = [('movie1','director1',2000)]
-
 name = input('Your name :')
-direct = input('Director name:')
-year = input('the year :')
-nw = (name,direct,year)
-print(f'name : {nw[0]} and year : {nw[1]} ')
-lst.append(nw)
-for m in lst:
-  print(f'name : {m[0]} and year : {m[1]}')
-del lst[0]
-print(lst)
+hWg = int(input('Hourly wage:'))
+wk = int(input('Hour Worked :'))
+over = 0 
+if wk > 40 :
+  overWg = (.1 * hWg) + hWg
+  overWk = wk - 40 
+  over = overWg * overWk
+  pay = ( 40 * hWg) + over 
+  print(f'the employee is due some additional pay, as well as the amount due is : {pay}')
+else:
+  pay = (hWg * wk) + over 
+  print(f'The amount due is : {pay}')
+
