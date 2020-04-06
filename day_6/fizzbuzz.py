@@ -1,4 +1,4 @@
-for elem in range(1,16):
+for elem in range(1,101):
   if elem%3 == 0 and elem%5 ==0:
     print ("Fizz Buzz")
   elif elem%3 == 0:
