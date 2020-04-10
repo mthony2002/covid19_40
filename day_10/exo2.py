@@ -22,13 +22,4 @@ mydict = {}
 
 for key, value in mydict.items():
   print(f'{key} : {value}')
-
-
-print('\n\n')
-del mydict['year_of_release']
-del mydict['track_list']
-mydict.update({'year_of_release': 'March 1st, 1973'})
-
-
-for key, value in mydict.items():
-  print(f'{key} : {value}')
+  
