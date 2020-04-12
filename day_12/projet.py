@@ -2,8 +2,6 @@
 
 readingList = []
 
-aswr = True
-
 def add():
   name=input('Enter the book name :').rstrip()
   author=input('Enter the author name :').rstrip()
@@ -39,7 +37,6 @@ def load():
       listBook()
     opt = menu()
   
-
 print("welcome ")
 print()
 load()
